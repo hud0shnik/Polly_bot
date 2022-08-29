@@ -27,11 +27,6 @@ type Chat struct {
 	ChatId int `json:"id"`
 }
 
-// Функция помощи пользователю
-func Help(botUrl string, update Update) {
-	SendMsg(botUrl, update, "Просто задай свой вопрос, я на него отвечу")
-}
-
 // Функция генерации псевдослучайных чисел
 func Random(n int) int {
 	rand.Seed(time.Now().Unix())
@@ -42,7 +37,11 @@ func Random(n int) int {
 func Ball8(botUrl string, update Update) {
 
 	answers := []string{
-		"DQACAgIAAxkBAAMXYws-dMDsuuw-DqYOblkX7RU7MS0AAtkeAALyalFItN_JGJbMnZ4pBA",
+		"DQACAgIAAxkBAAMgYw0KxGa_-bdaJ6km1XEAAXDrb_2rAAL2HgAC8mpRSJp36oZ8M81TKQQ",
+		"DQACAgIAAxkBAAMhYw0K7ZAuB0VxmZbKBZ4prZAIhI0AAtweAALyalFIp-xVoUVp4FIpBA",
+		"DQACAgIAAxkBAAMiYw0LTq9N-K0ex0TYyHNv-EYV-e8AAuMeAALyalFIN8FCgUZLeZEpBA",
+		"DQACAgIAAxkBAAMjYw0LeGSyR5tRJuErK9KE5DSvjlgAAvYeAALyalFImnfqhnwzzVMpBA",
+		"DQACAgIAAxkBAAMkYw0Loy_3vQmZC2XbB4meiMmYGo8AAgQfAALyalFIckmm5I3zbKApBA",
 	}
 
 	SendVn(botUrl, update, SendVideoNote{
