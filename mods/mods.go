@@ -60,6 +60,7 @@ func CurrentBall8(botUrl string, update Update, num int) {
 		"DQACAgIAAxkBAAMkYw0Loy_3vQmZC2XbB4meiMmYGo8AAgQfAALyalFIckmm5I3zbKApBA",
 	}
 
+	// Проверка на доступность кружка
 	if num > 0 && num <= len(answers) {
 		SendVn(botUrl, update, SendVideoNote{
 			ChatId:    update.Message.Chat.ChatId,
