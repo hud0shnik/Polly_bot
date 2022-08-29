@@ -51,6 +51,27 @@ func Ball8(botUrl string, update Update) {
 
 }
 
+func CurrentBall8(botUrl string, update Update, num int) {
+
+	answers := []string{
+		"DQACAgIAAxkBAAMgYw0KxGa_-bdaJ6km1XEAAXDrb_2rAAL2HgAC8mpRSJp36oZ8M81TKQQ",
+		"DQACAgIAAxkBAAMhYw0K7ZAuB0VxmZbKBZ4prZAIhI0AAtweAALyalFIp-xVoUVp4FIpBA",
+		"DQACAgIAAxkBAAMiYw0LTq9N-K0ex0TYyHNv-EYV-e8AAuMeAALyalFIN8FCgUZLeZEpBA",
+		"DQACAgIAAxkBAAMjYw0LeGSyR5tRJuErK9KE5DSvjlgAAvYeAALyalFImnfqhnwzzVMpBA",
+		"DQACAgIAAxkBAAMkYw0Loy_3vQmZC2XbB4meiMmYGo8AAgQfAALyalFIckmm5I3zbKApBA",
+	}
+
+	if num > 0 && num <= len(answers) {
+		SendVn(botUrl, update, SendVideoNote{
+			ChatId:    update.Message.Chat.ChatId,
+			VideoNote: answers[num-1],
+		})
+	} else {
+		SendMsg(botUrl, update, "У меня нет кружка №"+update.Message.Text)
+	}
+
+}
+
 // Приветствие и хелпа
 func Help(botUrl string, update Update) {
 	SendMsg(botUrl, update, "Привет, ты можешь посмотреть все кружки, для этого нужно просто прислать его номер (от 1 до 5ти). Ну или просто задай мне любой вопрос.")
