@@ -37,7 +37,6 @@ func Random(n int) int {
 func Ball8(botUrl string, update Update) {
 
 	answers := []string{
-		"DQACAgIAAxkBAAMgYw0KxGa_-bdaJ6km1XEAAXDrb_2rAAL2HgAC8mpRSJp36oZ8M81TKQQ",
 		"DQACAgIAAxkBAAMhYw0K7ZAuB0VxmZbKBZ4prZAIhI0AAtweAALyalFIp-xVoUVp4FIpBA",
 		"DQACAgIAAxkBAAMiYw0LTq9N-K0ex0TYyHNv-EYV-e8AAuMeAALyalFIN8FCgUZLeZEpBA",
 		"DQACAgIAAxkBAAMjYw0LeGSyR5tRJuErK9KE5DSvjlgAAvYeAALyalFImnfqhnwzzVMpBA",
@@ -51,10 +50,10 @@ func Ball8(botUrl string, update Update) {
 
 }
 
+// Функция заказа кружков
 func CurrentBall8(botUrl string, update Update, num int) {
 
 	answers := []string{
-		"DQACAgIAAxkBAAMgYw0KxGa_-bdaJ6km1XEAAXDrb_2rAAL2HgAC8mpRSJp36oZ8M81TKQQ",
 		"DQACAgIAAxkBAAMhYw0K7ZAuB0VxmZbKBZ4prZAIhI0AAtweAALyalFIp-xVoUVp4FIpBA",
 		"DQACAgIAAxkBAAMiYw0LTq9N-K0ex0TYyHNv-EYV-e8AAuMeAALyalFIN8FCgUZLeZEpBA",
 		"DQACAgIAAxkBAAMjYw0LeGSyR5tRJuErK9KE5DSvjlgAAvYeAALyalFImnfqhnwzzVMpBA",
@@ -74,7 +73,7 @@ func CurrentBall8(botUrl string, update Update, num int) {
 
 // Приветствие и хелпа
 func Help(botUrl string, update Update) {
-	SendMsg(botUrl, update, "Привет, ты можешь посмотреть все кружки, для этого нужно просто прислать его номер (от 1 до 5ти). Ну или просто задай мне любой вопрос.")
+	SendMsg(botUrl, update, "Привет, ты можешь посмотреть все кружки, для этого нужно просто прислать его номер (от 1 до 4). Ну или просто задай мне любой вопрос.")
 }
 
 // Функция инициализации конфига (всех токенов)
