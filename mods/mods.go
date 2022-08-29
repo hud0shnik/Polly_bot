@@ -51,6 +51,11 @@ func Ball8(botUrl string, update Update) {
 
 }
 
+// Приветствие и хелпа
+func Help(botUrl string, update Update) {
+	SendMsg(botUrl, update, "Привет, ты можешь посмотреть все кружки, для этого нужно просто прислать его номер (от 1 до 5ти). Ну или просто задай мне любой вопрос.")
+}
+
 // Функция инициализации конфига (всех токенов)
 func InitConfig() error {
 	viper.AddConfigPath("configs")
