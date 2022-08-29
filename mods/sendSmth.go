@@ -54,28 +54,6 @@ func SendMsg(botUrl string, update Update, msg string) error {
 	return nil
 }
 
-// Функция отправки стикеров
-func SendStck(botUrl string, update Update, url string) error {
-
-	// Формирование стикера
-	botStickerMessage := SendSticker{
-		ChatId:     update.Message.Chat.ChatId,
-		StickerUrl: url,
-	}
-	buf, err := json.Marshal(botStickerMessage)
-	if err != nil {
-		fmt.Println("Marshal json error: ", err)
-		return err
-	}
-	// Отправка стикера
-	_, err = http.Post(botUrl+"/sendSticker", "application/json", bytes.NewBuffer(buf))
-	if err != nil {
-		fmt.Println("SendSticker method error: ", err)
-		return err
-	}
-	return nil
-}
-
 // Функция отправки кружков
 func SendVn(botUrl string, update Update, vn SendVideoNote) error {
 
