@@ -72,8 +72,23 @@ func getUpdates(botUrl string, offset int) ([]mods.Update, error) {
 //	Функция генерации ответа
 func respond(botUrl string, update mods.Update) error {
 
-	// На любое сообщение/картинку бот присылает случайный кружок
-	mods.Ball8(botUrl, update)
+	if len(update.Message.Text) <= 0 {
+		return nil
+	}
+
+	switch update.Message.Text {
+	case "/start", "/help":
+		mods.Help(botUrl, update)
+		return nil
+	}
+
+	num, err := strconv.Atoi(update.Message.Text)
+	if err != nil {
+		mods.Ball8(botUrl, update)
+		return nil
+	}
+
+	mods.CurrentBall8(botUrl, update, num)
 
 	return nil
 }
