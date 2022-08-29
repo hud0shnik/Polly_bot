@@ -69,27 +69,11 @@ func getUpdates(botUrl string, offset int) ([]mods.Update, error) {
 	return restResponse.Result, nil
 }
 
-//	https://core.telegram.org/bots/api#using-a-local-bot-api-server
+//	Функция генерации ответа
 func respond(botUrl string, update mods.Update) error {
 
-	if len(update.Message.Text) <= 0 {
-		return nil
-	}
+	// На любое сообщение/картинку бот присылает случайный кружок
+	mods.Ball8(botUrl, update)
 
-	switch update.Message.Text {
-	case "/start", "/help":
-		mods.Help(botUrl, update)
-		return nil
-	}
-
-	lenMsg := len(update.Message.Text)
-
-	if update.Message.Text[lenMsg-1] == '?' {
-		mods.Ball8(botUrl, update)
-		return nil
-	}
-
-	mods.SendMsg(botUrl, update, "Немножко не поняла. Не забудь добавить знак вопроса в конце сообщения.")
 	return nil
-
 }
