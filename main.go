@@ -77,8 +77,11 @@ func respond(botUrl string, update mods.Update) error {
 	}
 
 	switch update.Message.Text {
-	case "/start", "/help":
+	case "/help":
 		mods.Help(botUrl, update)
+		return nil
+	case "/start":
+		mods.SendMsg(botUrl, update, "ну давай, задавай свой вопросик")
 		return nil
 	}
 
