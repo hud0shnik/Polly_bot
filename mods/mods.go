@@ -45,7 +45,8 @@ func Ball8(botUrl string, update Update) {
 		"DQACAgIAAxkBAAPWYySraHtQyul6d9HLRQkedOV9m7IAAvIbAAIeIiBJR4UwrFf4VSkpBA",
 		"DQACAgIAAxkBAAPXYySr1Sp9STwGRfla-PvpA5hkgToAAvUbAAIeIiBJwX7HTbJ-iywpBA",
 		"DQACAgIAAxkBAAPYYySr-4iT6c2MYVuH3xtCy1B5NVoAAvsbAAIeIiBJxS5Uvna4d24pBA",
-		"DQACAgIAAxkBAAPZYySvv9ToFJFBzjzFcTT3hBR5UYoAAvAbAAIeIiBJKIEstnLS1xApBA",
+		"DQACAgIAAxkBAAIBZmMmEUyqmWgeVDC7_Io21aSLSbdnAAJaJAAC7j8pSQYbftcmtXnsKQQ",
+		"DQACAgIAAxkBAAIBZWMmEUQ5rpXhNcpE-toyC-awgVE9AAI5JAAC7j8pScggvIVqF3VhKQQ",
 	}
 
 	SendVn(botUrl, update, SendVideoNote{
@@ -67,7 +68,8 @@ func CurrentBall8(botUrl string, update Update, num int) {
 		"DQACAgIAAxkBAAPWYySraHtQyul6d9HLRQkedOV9m7IAAvIbAAIeIiBJR4UwrFf4VSkpBA",
 		"DQACAgIAAxkBAAPXYySr1Sp9STwGRfla-PvpA5hkgToAAvUbAAIeIiBJwX7HTbJ-iywpBA",
 		"DQACAgIAAxkBAAPYYySr-4iT6c2MYVuH3xtCy1B5NVoAAvsbAAIeIiBJxS5Uvna4d24pBA",
-		"DQACAgIAAxkBAAPZYySvv9ToFJFBzjzFcTT3hBR5UYoAAvAbAAIeIiBJKIEstnLS1xApBA",
+		"DQACAgIAAxkBAAIBZmMmEUyqmWgeVDC7_Io21aSLSbdnAAJaJAAC7j8pSQYbftcmtXnsKQQ",
+		"DQACAgIAAxkBAAIBZWMmEUQ5rpXhNcpE-toyC-awgVE9AAI5JAAC7j8pScggvIVqF3VhKQQ",
 	}
 
 	// Проверка на доступность кружка
