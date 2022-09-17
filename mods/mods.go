@@ -84,7 +84,7 @@ func CurrentBall8(botUrl string, update Update, num int) {
 
 }
 
-// Приветствие и хелпа
+// Приветствие
 func Help(botUrl string, update Update) {
 	SendMsg(botUrl, update, "Привет, ты можешь посмотреть все кружки, для этого нужно просто прислать его номер (от 1 до 10). Ну или просто задай мне любой вопрос.")
 }
