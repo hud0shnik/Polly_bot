@@ -1,5 +1,7 @@
 # 🔮 Polly_bot -  бот, который знает всё 🧙‍♀️
 
+[![License - BSD 3-Clause](https://img.shields.io/static/v1?label=License&message=BSD+3-Clause&color=%239a68af&style=for-the-badge)](/LICENSE)
+
 <h3 align="left">🛠 Стек технологий:</h3>
 
 <!-- Telegram -->
@@ -18,8 +20,7 @@
 <h3 align="left">📄 О самом проекте:</h3>
 Бот, который просто отвечает случайно да/нет уже является классикой жанра, но вот бот, который отвечает кружками это что-то совершенно новое.
 
-
-</br>
-</br>
-
-[![License - BSD 3-Clause](https://img.shields.io/static/v1?label=License&message=BSD+3-Clause&color=%239a68af&style=for-the-badge)](/LICENSE)
+<h3 align="left">🔗 Ссылка на бота:</h3>
+<h1 align="center">
+   <a href="https://t.me/PollyTheWizard_bot" target="_blank"><img src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/60/000000/external-robot-support-vitaliy-gorbachev-blue-vitaly-gorbachev.png" alt="telegram" width="60" height="60"/></a>
+</h1>
