@@ -41,7 +41,7 @@ func main() {
 		}
 
 		// Вывод в консоль для тестов
-		fmt.Println(updates)
+		// fmt.Println(updates)
 	}
 }
 
